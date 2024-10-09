@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFair", "PlayFair\PlayFair.csproj", "{DAA1F5D8-3C26-44E6-A5F6-1F61FD49D984}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAA1F5D8-3C26-44E6-A5F6-1F61FD49D984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA1F5D8-3C26-44E6-A5F6-1F61FD49D984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA1F5D8-3C26-44E6-A5F6-1F61FD49D984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA1F5D8-3C26-44E6-A5F6-1F61FD49D984}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9F81694-9792-474C-B44F-06A3E0CB35E2}
+	EndGlobalSection
+EndGlobal
