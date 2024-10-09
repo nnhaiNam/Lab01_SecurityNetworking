@@ -94,8 +94,6 @@ namespace PlayFair
             return plaintext;
 
 
-
-
         }
 
         public string Encrypt(string plainText, string key)
@@ -111,6 +109,8 @@ namespace PlayFair
             int row_after_fill_key = tuple1.Item1;
             int column_after_fill_key = tuple1.Item2;
 
+           // Console.WriteLine(row_after_fill_key);
+            //Console.WriteLine(column_after_fill_key);
             fillRestOfAlpha(matrixAlphabet, row_after_fill_key, column_after_fill_key);
 
 
@@ -142,9 +142,12 @@ namespace PlayFair
                 Console.WriteLine();
             }
 
-            string cipherText=EncryptUsingPlayFair(plainText,matrixKey);
+            //Console.WriteLine(alphabetMap['A']);
+         
+             string cipherText=EncryptUsingPlayFair(plainText,matrixKey);
 
             return cipherText;
+            
 
 
         }
@@ -206,8 +209,10 @@ namespace PlayFair
             int r = 0, c = 0;
             for (int i = 0; i < key.Length; i++)
             {
+             
                 if (checkKeyIsExist(key[i]) == false)
                 {
+                    //Console.WriteLine(key[i]);
                     matrixAlphabet[r, c] = key[i];
                     if (c == 4)
                     {
@@ -230,8 +235,9 @@ namespace PlayFair
 
         private void fillRestOfAlpha(char[,] matrix, int r, int c)
         {
-            if (r != 4 && c != 4)
+            if (r != 4 || c != 4)
             {
+                
                 foreach (char key in alphabetMap.Keys)
                 {
 
